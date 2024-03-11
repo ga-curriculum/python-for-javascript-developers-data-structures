@@ -16,9 +16,9 @@ tktk Write a short but descriptive summary of the content in this module.
 | -------------------------------------------------------- | :--------: | :---: | -------------------------------------- |
 | [Setup](./setup/README.md)                               |     --     |  --   | Setting up the development environment |
 | [Concepts](./concepts/README.md)                         |     --     |  --   | tktk skills covered                    |
-| [Lists](./tktk-microlesson-01/README.md)                 |     --     |  --   | tktk skills covered                    |
-| [Tuples](./tktk-microlesson-03/README.md)                |     --     |  --   | tktk skills covered |
-| [Dictionaries](./tktk-microlesson-03/README.md)          |     --     |  --   | tktk skills covered                    |
+| [Lists](./lists/README.md)                 |     --     |  --   | tktk skills covered                    |
+| [Tuples](./tuples/README.md)                |     --     |  --   | tktk skills covered |
+| [Dictionaries](./dictionaries/README.md)          |     --     |  --   | tktk skills covered                    |
 | **Total content**                                        |     --     |  --   |                                        |
 
 ## Level Up content
@@ -26,7 +26,7 @@ tktk Write a short but descriptive summary of the content in this module.
 | Lesson                                                   | Video Time | Video | Skills              |
 | -------------------------------------------------------- | :--------: | :---: | ------------------- |
 | [Sets](./sets/README.md)                  |     --     |  --   | tktk skills covered |
-| [List Comprehensions](./tktk-microlesson-04/README.md)   |     --     |  --   | tktk skills covered |
+| [List Comprehensions](./list-comprehensions/README.md)   |     --     |  --   | tktk skills covered |
 | **Total Level Up content**                               |     --     |  --   |                     |
 
 ## References
