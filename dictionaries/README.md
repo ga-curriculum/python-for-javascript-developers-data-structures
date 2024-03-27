@@ -2,8 +2,7 @@
 
 **Learning objective:** By the end of this lesson, students will be able to unnderstand the concept of dictionaries in Python, differentiate them from other data structures, and demonstrate how to create and manipulate dictionaries.
 
-
-### Purpose
+## Purpose
 
 **Dictionaries** are to Python as **objects** are to JS.
 
@@ -27,8 +26,7 @@ student = {
 
 Unlike in JS, when strings are used as keys, they must be quoted.
 
-
-### Features
+## Features
 
 Dictionaries are mutable:
 
@@ -50,7 +48,7 @@ The above dictionary, `d`, has 1 item with a key of `3` that holds the value of 
 
 > ⚠️ Only since version 3.6 does Python track the insertion order of items in a dictionary - so beware if you’re relying on the order items are iterated upon.
 
-### Getting and setting values
+## Getting and setting values
 
 We use square brackets to get and set an item’s value:
 
@@ -65,7 +63,7 @@ print(student['name'])
 
 Unlike JS, we can’t access items in a Python dictionary using dot notation (dots are used to invoke methods on the dictionary).
 
-### The `get` method
+## The `get` method
 
 When accessing a key that does not exist in a dictionary, a `KeyError` will be raised.
 
@@ -83,7 +81,7 @@ print( student.get('skills', {'HTML': 5, 'JAVASCRIPT': 4}) )
 > {'HTML': 5, 'JAVASCRIPT': 4}
 ```
 
-### The `in` operator
+## The `in` operator
 
 Another way to avoid the `KeyError` is to use the `in` operator to check if the dictionary includes a key:
 
@@ -94,7 +92,7 @@ else:
   print( f"{student['name']} is not enrolled in a course")
 ```
 
-### Adding items
+## Adding items
 
 Simply assigning to a *key* that does not exist will create a new item in the dictionary.
 
@@ -106,8 +104,7 @@ student['age'] = 21
 
 > ❓ If an `'age'` item already existed, what would happen?
 
-
-### Deleting items
+## Deleting items
 
 The `del` statement is used to delete an item from a dictionary:
 
@@ -118,7 +115,8 @@ del student['age']
 > False
 ```
 
-### Number of items
+## Number of items
+
 Use the built-in `len` function to retrieve the number of items in a dictionary:
 
 ```python
@@ -130,7 +128,7 @@ len({})
 > 0
 ```
 
-### Dictionaries - iterating items
+## Dictionaries - iterating items
 
 `for` loops are used to iterate over the items in a dictionary.
 
