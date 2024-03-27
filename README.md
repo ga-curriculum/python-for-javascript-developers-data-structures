@@ -2,7 +2,7 @@
 
 ## About
 
-tktk Write a short but descriptive summary of the content in this module.
+In this lesson students will explore the fundamental data structures usedin Python, including lists, tuples, and dictionaries.
 
 ## Prerequisites
 
@@ -16,9 +16,9 @@ tktk Write a short but descriptive summary of the content in this module.
 | -------------------------------------------------------- | :--------: | :---: | -------------------------------------- |
 | [Setup](./setup/README.md)                               |     --     |  --   | Setting up the development environment |
 | [Concepts](./concepts/README.md)                         |     --     |  --   | tktk skills covered                    |
-| [Lists](./lists/README.md)                 |     --     |  --   | tktk skills covered                    |
+| [Lists](./lists/README.md)                 |     --     |  --   | create and manipulate lists in Python                     |
 | [Tuples](./tuples/README.md)                |     --     |  --   | tktk skills covered |
-| [Dictionaries](./dictionaries/README.md)          |     --     |  --   | tktk skills covered                    |
+| [Dictionaries](./dictionaries/README.md)          |     --     |  --   | create and manipulate dictionaries in Python                     |
 | **Total content**                                        |     --     |  --   |                                        |
 
 ## Level Up content
@@ -26,7 +26,7 @@ tktk Write a short but descriptive summary of the content in this module.
 | Lesson                                                   | Video Time | Video | Skills              |
 | -------------------------------------------------------- | :--------: | :---: | ------------------- |
 | [Sets](./sets/README.md)                  |     --     |  --   | tktk skills covered |
-| [List Comprehensions](./list-comprehensions/README.md)   |     --     |  --   | tktk skills covered |
+| [List Comprehensions](./list-comprehensions/README.md)   |     --     |  --   | create and work with lists using list comprehensions |
 | **Total Level Up content**                               |     --     |  --   |                     |
 
 ## References

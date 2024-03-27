@@ -2,8 +2,8 @@
 
 ## Lesson references
 
-- [tktk descriptive name of link]()
-- [tktk descriptive name of link]()
+- Python [anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern)
+- [dictionary view object](https://docs.python.org/3/library/stdtypes.html#dictionary-view-objects)
 - [tktk descriptive name of link]()
 
 ## Level Up references
