@@ -6,7 +6,6 @@
 
 n Python, a set is an unordered collection of unique elements. Unlike lists and tuples, sets do not allow duplicate elements. Sets are commonly used when dealing with mathematical operations like union, intersection, and difference.
 
-
 ## Creating sets
 
 To create a set in Python, you can use curly braces `{}` or the built-in `set()` function. 

@@ -2,8 +2,7 @@
 
 **Learning objective:** By the end of this lesson, students will be able to create and manipulate lists in Python. 
 
-
-### Purpose
+## Purpose
 
 **Lists** are to Python as **arrays** are to JS.
 
@@ -13,8 +12,7 @@ A **list** provides a container for zero or more items (*elements*).
 
 **Lists** have a class (type) of `list`.
 
-
-### Basic syntax
+## Basic syntax
 Like arrays in JS, a list can be created with a set of square brackets:
 
 ```python
@@ -28,8 +26,7 @@ len(colors)
 > 3
 ```
 
-
-### Features
+## Features
 
 Lists are considered to be a *sequence* type in Python. A *sequence* is a generic term used for an **ordered** collection. Other *sequence* types in Python include **strings** and **tuples**.
 
@@ -38,7 +35,7 @@ Lists are mutable:
 - Items within a list can be replaced
 - Items can be added and removed from a list
 
-### Accessing items
+## Accessing items
 
 Accessing the individual items of a list is much like accessing elements in a JS array, i.e., by using square brackets with an expression that evaluates to an integer:
 
@@ -57,8 +54,7 @@ colors[-1]
 
 No need to write code like `colors[len(colors) - 1]` - yay!
 
-
-### Assigning items
+## Assigning items
 
 We also use square brackets to target an item of a list for assignment:
 
@@ -75,7 +71,7 @@ colors[10] = 'yellow'
 > IndexError: list assignment index out of range
 ```
 
-### Adding an item
+## Adding an item
 
 The equivalent to JS’s `push()` method is `append()`:
 
@@ -103,7 +99,7 @@ print(nums)
 
 > ❓ How can we combine arrays in JavaScript into a new array?
 
-### Inserting an item
+## Inserting an item
 
 To add an item anywhere within a list, use the `insert()` method:
 
@@ -114,7 +110,7 @@ colors.insert(1, 'yellow')
 > ['red', 'yellow', 'green', 'brown', 'purple', 'orange', 'black']
 ```
 
-### Removing an item
+## Removing an item
 
 Yup, there’s a `pop()` method, but it’s more flexible in Python because you can specify the index of the item to remove and return:
 
@@ -148,7 +144,7 @@ print(colors)
 
 No value is returned by the `remove()` method.
 
-### Clearing an entire list
+## Clearing an entire list
 
 The `clear()` method does just what you’d think:
 
@@ -160,7 +156,7 @@ print(colors)
 > []
 ```
 
-### Iterating over items in a list
+## Iterating over items in a list
 
 The `for in` loop is used to iterate over the items in a list:
 

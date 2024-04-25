@@ -2,8 +2,7 @@
 
 **Learning objective:** By the end of this lesson, students will be able to create and work with lists using list comprehensions.
 
-
-### Purpose
+## Purpose
 
 *List comprehensions* are a powerful feature in Python.
 
@@ -11,7 +10,7 @@ They provide a concise way to create and work with lists.
 
 They will seem confusing as first, but they certainly are a favorite of *Python fans* and you will probably come across them when googling.
 
-### Numerical Example
+## Numerical Example
 
 Say we needed to square all of the numbers in a list and put them into a new list, we might use a for loop like this:
 
@@ -42,7 +41,7 @@ To this:
 squares = [n * n for n in nums]
 ```
 
-### Basic syntax
+## Basic syntax
 
 Here’s the basic syntax of a list comprehension:
 
@@ -53,7 +52,7 @@ Here’s the basic syntax of a list comprehension:
 
 As you can see, a list comprehension is basically a modified `for` loop within square brackets which, as we know, returns a new list.
 
-### Filtering the Items
+## Filtering the Items
 
 We just saw how list comprehensions are a nice way to map a list, but they can be used for **filtering** too.
 
@@ -88,7 +87,6 @@ To this one-liner:
 even_squares = [n * n for n in nums if (n * n) % 2 == 0]
 ```
 
-​
 Talk about less is more!
 
 ### List Comprehensions - Review Questions ❓

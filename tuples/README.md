@@ -1,9 +1,8 @@
 # ![Python Data Structures - Tuples](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to create and manipulate tuples in Python. 
+**Learning objective:** By the end of this lesson, students will be able to create and manipulate tuples in Python.
 
-
-### Purpose
+## Purpose
 
 **Tuples** in Python are very similar to Python **lists**.
 
@@ -11,7 +10,7 @@ Tuples have a class (type) of `tuple`.
 
 You may come across tuple’s being “classified” based on how many items they contain, e.g., a **2-tuple** would be used to hold a `key` and its `value`.
 
-### Basic syntax
+## Basic syntax
 
 Tuples can be defined in a few different ways. Most basically, they are defined like this:
 
@@ -48,7 +47,7 @@ print( type(hello_tuple) )
 > <class 'tuple'>
 ```
 
-### Differences between tuples & lists
+## Differences between tuples & lists
 
 The main difference between tuples and lists is that tuples are immutable.
 
@@ -60,8 +59,7 @@ Because they are immutable, tuples can even be used as keys for dictionaries.
 
 Generally, you’ll find that tuples are used to contain heterogeneous (different) data types and lists for homogeneous (similar) data types.
 
-
-### Accessing items
+## Accessing items
 
 Although tuples can’t be modified like lists, we can retrieve their items in the same way using square brackets:
 
@@ -81,7 +79,7 @@ print(blue_idx)
 > 2
 ```
 
-### Iteration
+## Iteration
 
 The items in tuples are iterated over by using `for` loops as we saw previously with lists:
 
@@ -94,7 +92,7 @@ for idx, color in enumerate(colors):
 > 2 blue
 ```
 
-### Unpacking tuples
+## Unpacking tuples
 
 Tuples (and other sequences such as lists & strings) have a convenient feature, called unpacking, for performing multiple variable assignments in a single line of code:
 
@@ -114,7 +112,7 @@ for key, val in student.items():
   print( f"{key} = {val}" )
 ```
 
-### ## Sequences can be “sliced”
+## Sequences can be “sliced”
 
 Slicing in Python is used to create “slices” (copies) of sequences.
 
@@ -158,4 +156,3 @@ print( colors[1:] )
 fruit = ('apples', 'bananas', 'oranges')
 fruits = fruit[:]
 ```
-
