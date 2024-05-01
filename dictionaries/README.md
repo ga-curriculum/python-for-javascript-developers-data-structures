@@ -1,4 +1,4 @@
-# ![Python Data Structures - Dictionaries](./assets/hero.png)
+# ![Python for JavaScript Developers - Python Data Structures - Dictionaries](./assets/hero.png)
 
 **Learning objective:** By the end of this lesson, students will be able to unnderstand the concept of dictionaries in Python, differentiate them from other data structures, and demonstrate how to create and manipulate dictionaries.
 

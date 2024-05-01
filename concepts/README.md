@@ -1,4 +1,4 @@
-# ![Python Data Structures - Concepts](./assets/hero.png)
+# ![Python for JavaScript Developers - Python Data Structures - Concepts](./assets/hero.png)
 
 **Learning objective:** By the end of this lesson, students will be able to tktk
 

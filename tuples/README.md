@@ -1,4 +1,4 @@
-# ![Python Data Structures - Tuples](./assets/hero.png)
+# ![Python for JavaScript Developers - Python Data Structures - Tuples](./assets/hero.png)
 
 **Learning objective:** By the end of this lesson, students will be able to create and manipulate tuples in Python.
 

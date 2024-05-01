@@ -1,4 +1,4 @@
-# ![Python Data Structures - References](./assets/hero.png)
+# ![Python for JavaScript Developers - Python Data Structures - References](./assets/hero.png)
 
 ## Lesson references
 
