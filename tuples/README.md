@@ -4,9 +4,9 @@
 
 ## What are tuples?
 
-***Tuples*** in Python are very similar to Python ***lists***. They can be pronounced as either tuh-pull or two-pull. No matter how you pronounce it, someone will be mad at you, so pick one and ignore the haters. A tuple can hold zero or more ***items***.
+***Tuples*** in Python are very similar to Python ***lists***. They can be pronounced as either tuh-pull or two-pull. No matter how you pronounce it, someone will be mad at you, so pick one and ignore the haters. Even the creator of Python doesn't [hold a strong opinion either way](https://twitter.com/gvanrossum/status/86144775731941376).
 
-Tuples can contain any data type and have a class (type) of `tuple`.
+A tuple can hold zero or more ***items***. Tuples can contain any data type and have a class (type) of `tuple`.
 
 Tuples are commonly classified based on the number of items they contain. For example, a ***2-tuple*** would likely contain two items, such as `(key, value)`.
 

@@ -4,62 +4,62 @@
 
 ## Introduction to sets in Python
 
-n Python, a set is an unordered collection of unique elements. Unlike lists and tuples, sets do not allow duplicate elements. Sets are commonly used when dealing with mathematical operations like union, intersection, and difference.
+A ***set*** is an unordered collection of unique items called ***elements***. Unlike lists and tuples, sets do not allow duplicate elements. Sets are not indexed. Elements in a set can be added and removed but cannot be changed.
+
+Sets are commonly used for mathematical operations like union, intersection, and difference. This makes them useful for tasks such as removing duplicates and finding common elements in multiple collections.
 
 ## Creating sets
 
-To create a set in Python, you can use curly braces `{}` or the built-in `set()` function. 
+There are two ways to define a set in Python - using curly braces (`{}`) or the `set()` function.
 
-Here's how to create a set:
+### Curly braces `{}`
+
+Create a set from scratch using curly braces:
 
 ```python
-# Using curly braces
-my_set = {1, 2, 3, 4, 5}
+integer_set = {1, 2, 3, 4, 5}
+```
 
-# Using the set() function
-another_set = set([5, 6, 7, 8, 9])
+### The `set()` function
+
+Or, more commonly, create a set from an iterable data type, like a list or tuple.
+
+```python
+another_int_set = set([5, 6, 7, 8, 9])
+
+chips = ['potato', 'computer', 'fish and']
+
+chips_set = set(chips)
 ```
 
 ## Operations on sets
 
-Sets support various operations such as adding elements, removing elements, and performing set operations like union, intersection, and difference.
+Sets support various operations such as adding elements, removing elements, and performing mathematical set operations.
 
 ### Adding elements
 
-In Python, you can add elements to a set using the `add()` method. In JavaScript, you can add elements to a Set using the `add()` method as well.
+In Python, you can add elements to a set using the `add()` method.
 
 ```python
 # Adding elements to a set
-my_set.add(6)
+chips_set.add('paint')
+print(chips_set)
+# prints: {'paint', 'fish and', 'potato', 'computer'}
+# remember, sets are not ordered - your elements may print in a different order
 ```
 
 ### Removing elements
 
-To remove elements from a set in Python, you can use the `remove()` method. In JavaScript, you can use the `delete()` method.
+To remove elements from a set in Python, you can use the `remove()` method.
 
 ```python
 # Removing elements from a set
-my_set.remove(3)
+chips_set.remove('fish and')
+print(chips_set)
+# prints: {'potato', 'paint', 'computer'}
+# remember, sets are not ordered - your elements may print in a different order
 ```
 
-### Set intersection
+### Mathematical operations
 
-To find the intersection of two sets (i.e., the set of all elements present in both sets), you can use the `&` operator in Python. 
-
-```python
-# Set intersection
-intersection_set = my_set & another_set
-```
-
-### Set difference
-
-To find the set difference (i.e., the set of elements that are present in the first set but not in the second set), you can use the `-` operator in Python.
-
-```python
-# Set difference
-difference_set = my_set - another_set
-```
-
-## You Do 🧠
-
-Create a set named colors containing the following colors: "red", "green", "blue", "yellow". Then, add the color "orange" to the set. Finally, print the updated set to see the result.
+Sets can help performing more complex mathematical operations, such as discovering overlap between two collections of data - check out [this tutorial](https://realpython.com/python-sets/) from Real Python for more
