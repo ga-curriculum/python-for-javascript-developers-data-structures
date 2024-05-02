@@ -54,11 +54,11 @@ print(name)
 # prints: Maria
 ```
 
-Unlike JavaScript, we can't access items in a Python dictionary using dot notation (dots are exclusively used to invoke methods on the dictionary).
+Unlike JavaScript, we can't access items in a Python dictionary using dot notation (dots are exclusively used to invoke methods on a dictionary in Python).
 
 ### The `get` method
 
-When accessing a key that does not exist in a dictionary, a `KeyError` will be raised.
+When attempting to access a key that does not exist in a dictionary, a `KeyError` will be raised.
 
 One option to avoid this error is to use the `get` method:
 
@@ -86,9 +86,9 @@ else:
 
 Dictionaries are mutable:
 
-- The values assigned to a key can be changed
-- Additional items can be added
-- Existing items can be deleted
+- The values assigned to a key can be changed.
+- Additional items can be added.
+- Existing items can be deleted.
 
 ### Setting items
 

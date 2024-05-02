@@ -6,7 +6,7 @@
 
 ***Lists*** serve the same function in Python as ***arrays*** do in JavaScript. A list holds zero or more items called *elements* - just like arrays in JavaScript.
 
-Lists can contain any data type - strings, integers, even dictionaries and nested lists. They grow and shrink in size dynamically. You can add to them without being concerned about their capacity. They have a class (type) of `list`.
+Lists can contain any data type - strings, integers, dictionaries, nested lists, and so on. They grow and shrink in size dynamically. You can add to them without being concerned about their capacity. They have a class (type) of `list`.
 
 ## Basic syntax
 
@@ -16,141 +16,123 @@ Like arrays in JavaScript, a list can be created with a set of square brackets:
 colors = ['red', 'green', 'blue']
 ```
 
-The number of items in a list is returned using the built-in `len()` function:
+tktk Hunter, could you create a syntax asset here, similar to <https://pages.git.generalassemb.ly/modular-curriculum-all-courses/intro-to-javascript-arrays/fundamentals/>
 
-```python
-len(colors)
-> 3
-```
+1. The name of the list. This should be plural because it holds a collection of elements.
+2. Opening and closing square brackets indicate a list.
+3. The list's elements are placed inside the square brackets, separated by a comma. When initializing a list, you don't have to include elements; use a set of empty square brackets - `[]`.
 
-## Features
+Lists are considered a *sequence* type in Python.
 
-Lists are considered to be a *sequence* type in Python. A *sequence* is a generic term used for an **ordered** collection. Other *sequence* types in Python include **strings** and **tuples**.
+> 📚 A *sequence* is a generic term for an ordered collection. Other sequence types in Python include strings and tuples.
 
-Lists are mutable:
-
-- Items within a list can be replaced
-- Items can be added and removed from a list
+Like JavaScript arrays, Python lists use zero-based indexing, meaning that the first element in the list is at index position `0`.
 
 ## Accessing items
 
-Accessing the individual items of a list is much like accessing elements in a JS array, i.e., by using square brackets with an expression that evaluates to an integer:
+Accessing the individual items of a list is much like accessing elements in a JavaScript array. Use square brackets with an expression that evaluates to an integer to access the element at that index:
 
 ```python
-idx = 1
-colors[idx + 1]
-> blue
+print(colors[0])
+# prints: red
 ```
 
-However, unlike in JS, we can use negative integers to index from the end of a list:
+However, unlike in JavaScript, we can use negative integers to index from the end of a list:
 
 ```python
-colors[-1]
-> blue
+print(colors[-1])
+# prints: blue
 ```
 
-No need to write code like `colors[len(colors) - 1]` - yay!
+This means you don't need to get the length of a list (for example, with `len(colors)`) to find the end of an array. There's no need to write code like `colors[len(colors) - 1]` - yay!
 
-## Assigning items
+## Mutation
+
+Lists are mutable:
+
+- Existing items within a list can be replaced.
+- Additional items can be added to the list.
+- Existing items can be removed from a list.
+
+### Assigning items
 
 We also use square brackets to target an item of a list for assignment:
 
 ```python
 colors[-1] = 'brown'
 print(colors)
-> ['red', 'green', 'brown']
+# prints: ['red', 'green', 'brown']
 ```
 
-Unlike with JS arrays, assigning to a non-existing index results in an error:
+Unlike with JavaScript arrays, assigning to a non-existing index results in an error:
 
 ```python
 colors[10] = 'yellow'
-> IndexError: list assignment index out of range
+# error: IndexError: list assignment index out of range
 ```
 
-## Adding an item
+### Adding an item
 
-The equivalent to JS’s `push()` method is `append()`:
+The equivalent to JavaScript's `push()` method is `append()`:
 
 ```python
 colors.append('purple')
+print(colors)
+# prints: ['red', 'green', 'brown', 'purple']
+# purple was added to the end of the list
 ```
 
-However, unlike JS’s `push()` method, `append()` can only add one item and does not return a value.
+However, unlike JavaScript's `push()` method, `append()` can only add one item and does not return a value.
 
 For adding multiple items, use the `extend()`:
 
 ```python
 colors.extend(['orange', 'black'])
+print(colors)
+# prints: ['red', 'green', 'brown', 'purple', 'orange', 'black']
+# orange and black were added to the end of the list
 ```
 
-In Python, the `+` operator can be used to create a new list by combining them:
-
-```python
-odds = [1, 3, 5]
-evens = [2, 4, 6]
-nums = odds + evens
-print(nums)
-> [1, 3, 5, 2, 4, 6]
-```
-
-> ❓ How can we combine arrays in JavaScript into a new array?
-
-## Inserting an item
+### Inserting an item
 
 To add an item anywhere within a list, use the `insert()` method:
 
 ```python
-print(colors)
-> ['red', 'green', 'brown', 'purple', 'orange', 'black']
 colors.insert(1, 'yellow')
-> ['red', 'yellow', 'green', 'brown', 'purple', 'orange', 'black']
+print(colors)
+# prints: ['red', 'yellow', 'green', 'brown', 'purple', 'orange', 'black']
+# yellow was added at the 1 index; no elements were replaced
 ```
 
-## Removing an item
+### Removing an item
 
-Yup, there’s a `pop()` method, but it’s more flexible in Python because you can specify the index of the item to remove and return:
+Python lists have a `pop()` method, but it's more flexible in Python because you can specify the index of the item to remove and return:
 
 ```python
-print(colors)
-> ['red', 'yellow', 'green', 'brown', 'purple', 'orange', 'black']
 green = colors.pop(2)
 print(colors)
-> ['red', 'yellow', 'brown', 'purple', 'orange', 'black']
+# prints: ['red', 'yellow', 'brown', 'purple', 'orange', 'black']
+# green was removed at the 2 index and is in the green variable
 ```
 
-If you don’t care about the value returned by `pop()`, you can also use the `del` operator to delete an item:
+There's also a `remove()` method that removes the first item that matches what you pass in:
 
 ```python
-print(colors)
-> ['red', 'yellow', 'brown', 'purple', 'orange', 'black']
-del colors[1]
-print(colors)
-> ['red', 'brown', 'purple', 'orange', 'black']
-```
-
-Also there’s a `remove()` method that removes the first item that matches what you pass in:
-
-```python
-print(colors)
-> ['red', 'brown', 'purple', 'orange', 'black']
 colors.remove('orange')
 print(colors)
-> ['red', 'brown', 'purple', 'black']
+# prints: ['red', 'yellow', 'brown', 'purple', 'black']
 ```
 
 No value is returned by the `remove()` method.
 
-## Clearing an entire list
+### Clearing an entire list
 
-The `clear()` method does just what you’d think:
+The `clear()` method empties a list:
 
 ```python
-print(colors)
-> ['red', 'brown', 'purple', 'black']
 colors.clear()
 print(colors)
-> []
+# prints: []
 ```
 
 ## Iterating over items in a list
@@ -160,25 +142,20 @@ The `for in` loop is used to iterate over the items in a list:
 ```python
 colors = ['red', 'green', 'blue']
 for color in colors:
-  print(color)
-> red
-> green
-> blue
+    print(color)
+    # prints:
+    # red
+    # green
+    # blue
 ```
 
 If we need to access the index of the item while iterating over a list, we use the built-in `enumerate()` function to provide the index and the value to a `for` loop:
 
 ```python
 for idx, color in enumerate(colors):
-  print(idx, color)
-> 0 red
-> 1 green
-> 2 blue
+    print(idx, color)
+    # prints:
+    # 0 red
+    # 1 green
+    # 2 blue
 ```
-
-### List review questions❓
-
-1. What are lists similar to in JS?
-2. What is one way to add items to a list?
-3. What operator can we use to remove an item from a list?
-
