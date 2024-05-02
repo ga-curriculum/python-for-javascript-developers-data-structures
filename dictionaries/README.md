@@ -2,7 +2,7 @@
 
 **Learning objective:** By the end of this lesson, students will be able to understand the concept of dictionaries in Python, differentiate them from other data structures, and demonstrate how to create and manipulate dictionaries.
 
-## Purpose
+## What are dictionaries?
 
 ***Dictionaries*** in Python are similar to ***objects*** in JavaScript. Dictionaries are collections of ***items***, like objects, which are collections of ***properties*** in JavaScript.
 
@@ -19,7 +19,7 @@ student = {
 }
 ```
 
-tktk Hunter, could you create a syntax asset here, similar to <https://git.generalassemb.ly/modular-curriculum-all-courses/intro-to-javascript-objects/blob/main/concepts/README.md>
+tktk Hunter, could you create a syntax asset here to replace the above, similar to <https://git.generalassemb.ly/modular-curriculum-all-courses/intro-to-javascript-objects/blob/main/concepts/README.md>
 
 1. A key
 2. A value

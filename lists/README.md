@@ -4,7 +4,7 @@
 
 ## What are lists?
 
-***Lists*** serve the same function in Python as ***arrays*** do in JavaScript. A list holds zero or more items called *elements* - just like arrays in JavaScript.
+***Lists*** serve the same function in Python as ***arrays*** do in JavaScript. A list holds zero or more items called ***elements*** - just like arrays in JavaScript.
 
 Lists can contain any data type - strings, integers, dictionaries, nested lists, and so on. They grow and shrink in size dynamically. You can add to them without being concerned about their capacity. They have a class (type) of `list`.
 
@@ -16,7 +16,7 @@ Like arrays in JavaScript, a list can be created with a set of square brackets:
 colors = ['red', 'green', 'blue']
 ```
 
-tktk Hunter, could you create a syntax asset here, similar to <https://pages.git.generalassemb.ly/modular-curriculum-all-courses/intro-to-javascript-arrays/fundamentals/>
+tktk Hunter, could you create a syntax asset here to replace the above , similar to <https://pages.git.generalassemb.ly/modular-curriculum-all-courses/intro-to-javascript-arrays/fundamentals/>
 
 1. The name of the list. This should be plural because it holds a collection of elements.
 2. Opening and closing square brackets indicate a list.
