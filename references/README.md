@@ -2,12 +2,7 @@
 
 ## Lesson references
 
-- Python [anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern)
-- [dictionary view object](https://docs.python.org/3/library/stdtypes.html#dictionary-view-objects)
-- [tktk descriptive name of link]()
-
-## Level Up references
-
-- [tktk descriptive name of link]()
-- [tktk descriptive name of link]()
-- [tktk descriptive name of link]()
+- [Wikipedia - Anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern)
+- [Python docs - Built-in Types - Dictionary view objects](https://docs.python.org/3/library/stdtypes.html#dictionary-view-objects)
+- [Real Python - Sets in Python](https://realpython.com/python-sets/)
+- [Twitter - Guido van Rossum [tuple pronunciation]](https://twitter.com/gvanrossum/status/86144775731941376)
