@@ -2,22 +2,26 @@
 
 ## Setup
 
-Open your Terminal application and navigate to your **`~/code/ga/lectures`** directory:
+Open your Terminal application and navigate to your `~/code/ga/lectures` directory:
 
 ```bash
 cd ~/code/ga/lectures
 ```
 
-Make a new directory called **`[python-data-structures]`**, then enter this directory:
+Make a new directory called `python_data_structures`, then enter this directory:
 
 ```bash
-mkdir [python-data-structures]
-cd [python-data-structures]
+mkdir python_data_structures
+cd python_data_structures
 ```
 
-<!-- Other setup instructions here -->
+Once in this directory, create a `data_structures.py` file:
 
-Open the contents of the directory in VSCode:
+```bash
+touch data_structures.py
+```
+
+With the file created, open the contents of the directory in VS Code:
 
 ```bash
 code .

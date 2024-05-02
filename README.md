@@ -15,10 +15,9 @@ In this lesson students will explore the fundamental data structures usedin Pyth
 | Lesson                                                   | Video Time | Video | Skills                                 |
 | -------------------------------------------------------- | :--------: | :---: | -------------------------------------- |
 | [Setup](./setup/README.md)                               |     --     |  --   | Setting up the development environment |
-| [Concepts](./concepts/README.md)                         |     --     |  --   | tktk skills covered                    |
+| [Dictionaries](./dictionaries/README.md)          |     --     |  --   | create and manipulate dictionaries in Python                     |
 | [Lists](./lists/README.md)                 |     --     |  --   | create and manipulate lists in Python                     |
 | [Tuples](./tuples/README.md)                |     --     |  --   | tktk skills covered |
-| [Dictionaries](./dictionaries/README.md)          |     --     |  --   | create and manipulate dictionaries in Python                     |
 | **Total content**                                        |     --     |  --   |                                        |
 
 ## Level Up content

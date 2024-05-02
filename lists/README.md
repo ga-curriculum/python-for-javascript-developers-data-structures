@@ -1,19 +1,16 @@
 # ![Python Data Structures - Lists](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to create and manipulate lists in Python. 
+**Learning objective:** By the end of this lesson, students will be able to create and manipulate lists in Python.
 
-## Purpose
+## What are lists?
 
-**Lists** are to Python as **arrays** are to JS.
+***Lists*** serve the same function in Python as ***arrays*** do in JavaScript. A list holds zero or more items called *elements* - just like arrays in JavaScript.
 
-A **list** provides a container for zero or more items (*elements*).
-
-**Lists** can contain items of different types, including dictionaries and nested lists.
-
-**Lists** have a class (type) of `list`.
+Lists can contain any data type - strings, integers, even dictionaries and nested lists. They grow and shrink in size dynamically. You can add to them without being concerned about their capacity. They have a class (type) of `list`.
 
 ## Basic syntax
-Like arrays in JS, a list can be created with a set of square brackets:
+
+Like arrays in JavaScript, a list can be created with a set of square brackets:
 
 ```python
 colors = ['red', 'green', 'blue']

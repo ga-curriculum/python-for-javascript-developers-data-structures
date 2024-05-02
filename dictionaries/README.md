@@ -1,32 +1,88 @@
 # ![Python Data Structures - Dictionaries](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to unnderstand the concept of dictionaries in Python, differentiate them from other data structures, and demonstrate how to create and manipulate dictionaries.
+**Learning objective:** By the end of this lesson, students will be able to understand the concept of dictionaries in Python, differentiate them from other data structures, and demonstrate how to create and manipulate dictionaries.
 
 ## Purpose
 
-**Dictionaries** are to Python as **objects** are to JS.
+***Dictionaries*** in Python are similar to ***objects*** in JavaScript. Dictionaries are collections of ***items***, like objects, which are collections of ***properties*** in JavaScript.
 
-A **dictionary** provides a container for `key: value` pairs.
+Dictionaries have a class (type) of `dict`.
 
-In Python, we commonly refer to `key: value` pairs as **items** vs. **properties** as in JS.
+## Basic syntax
 
-*Dictionaries* have a class (type) of `dict`.
-
-### Basic syntax
-
-As with objects in JS, a dictionary is created literally using curly braces:
+As with objects in JavaScript, a dictionary literal is created using curly braces:
 
 ```python
 student = {
-  'name': 'Maria',
-  'course': 'SEI',
-  'current_week': 7
+    'name': 'Maria',
+    'favorite_integer': 5,
 }
 ```
 
-Unlike in JS, when strings are used as keys, they must be quoted.
+tktk Hunter, could you create a syntax asset here, similar to <https://git.generalassemb.ly/modular-curriculum-all-courses/intro-to-javascript-objects/blob/main/concepts/README.md>
 
-## Features
+1. A key
+2. A value
+3. An item - or a `key: value` pair
+4. The dictionary itself
+
+Any immutable type (like a number) can be used as a key. Unlike in JavaScript, when strings are used as keys, they must be surrounded in quotes, as they are above. The value held by a variable can also be used as a key - this is a common pitfall for JavaScript developers new to Python:
+
+```python
+favorite_animal = 'dog'
+
+student = {
+    'name': 'Maria',
+    'favorite_integer': 5,
+    favorite_animal: 'llama' # notice the lack of quotes around favorite_animal
+}
+
+print(student)
+# prints: {'name': 'Maria', 'favorite_integer': 5, 'dog': 'llama'}
+# note the 'dog' key - the value of the favorite_animal variable is used
+```
+
+## Accessing items in dictionaries
+
+### Getting values
+
+We use square brackets to get an item's value:
+
+```python
+name = student['name']
+print(name)
+# prints: Maria
+```
+
+Unlike JavaScript, we can't access items in a Python dictionary using dot notation (dots are exclusively used to invoke methods on the dictionary).
+
+### The `get` method
+
+When accessing a key that does not exist in a dictionary, a `KeyError` will be raised.
+
+One option to avoid this error is to use the `get` method:
+
+```python
+favorite_food = student['favorite_food']
+# error: KeyError: 'favorite_food'
+
+print(student.get('favorite_food'))
+# prints: None
+```
+
+### The `in` operator
+
+Another way to avoid the `KeyError` is to use the `in` operator to check if the dictionary includes a key:
+
+```python
+if 'course' in student:
+  print(f"{student['name']} is enrolled in {student['course']}")
+else:
+  print(f"{student['name']} is not enrolled in a course")
+  # prints: Maria is not enrolled in a course
+```
+
+## Mutation
 
 Dictionaries are mutable:
 
@@ -34,85 +90,35 @@ Dictionaries are mutable:
 - Additional items can be added
 - Existing items can be deleted
 
-Any immutable type can be used as a key, including *numbers* and *tuples* (which we’ll cover in a bit), for example:
+### Setting items
+
+We not only use square brackets to get an item's value - we also use it to set an item's value:
 
 ```python
-some_key = 3
-
-d = {
-  some_key: 'three'
-}
-```
-
-The above dictionary, `d`, has 1 item with a key of `3` that holds the value of `'three'`.
-
-> ⚠️ Only since version 3.6 does Python track the insertion order of items in a dictionary - so beware if you’re relying on the order items are iterated upon.
-
-## Getting and setting values
-
-We use square brackets to get and set an item’s value:
-
-```python
-name = student['name']
-print(name)
-> Maria
 student['name'] = 'Mariana'
 print(student['name'])
-> Mariana
+# prints: Mariana
 ```
 
-Unlike JS, we can’t access items in a Python dictionary using dot notation (dots are used to invoke methods on the dictionary).
+### Adding items
 
-## The `get` method
+Assigning to a ***key*** that does not exist will create a new item in the dictionary.
 
-When accessing a key that does not exist in a dictionary, a `KeyError` will be raised.
-
-> ❓ What happens when we access a property that does not exist in a JS object?
-
-One option to avoid this error is to use the `get` method:
+Let's add an item to the `student` dictionary:
 
 ```python
-skills = student['skills']
-> KeyError: 'skills'
-print( student.get('skills') )
-> None
-# Provide a default value if key not in dictionary
-print( student.get('skills', {'HTML': 5, 'JAVASCRIPT': 4}) )
-> {'HTML': 5, 'JAVASCRIPT': 4}
+student['age'] = 25
 ```
 
-## The `in` operator
-
-Another way to avoid the `KeyError` is to use the `in` operator to check if the dictionary includes a key:
-
-```python
-if 'course' in student:
-  print( f"{student['name']} is enrolled in {student['course']}")
-else:
-  print( f"{student['name']} is not enrolled in a course")
-```
-
-## Adding items
-
-Simply assigning to a *key* that does not exist will create a new item in the dictionary.
-
-Let’s add an item to `student`:
-
-```python
-student['age'] = 21
-```
-
-> ❓ If an `'age'` item already existed, what would happen?
-
-## Deleting items
+### Deleting items
 
 The `del` statement is used to delete an item from a dictionary:
 
 ```python
-del student['age']
-# Verify that item was deleted
-'age' in student
-> False
+del student['dog']
+# verify that the item was deleted
+print('dog' in student)
+# prints: False
 ```
 
 ## Number of items
@@ -120,74 +126,51 @@ del student['age']
 Use the built-in `len` function to retrieve the number of items in a dictionary:
 
 ```python
-print( student )
-> {'name': 'Tina', 'course': 'SEI'}
-len(student)
-> 2
-len({})
-> 0
+print(student)
+# prints: {'name': 'Maria', 'favorite_integer': 5, 'age': 25}
+print(len(student))
+# prints: 3
+print(len({}))
+# prints: 0
 ```
 
-## Dictionaries - iterating items
+## Iterating through dictionaries
 
 `for` loops are used to iterate over the items in a dictionary.
 
-However, accessing the value of an item as follows is considered to be a Python [**anti-pattern**](https://en.wikipedia.org/wiki/Anti-pattern):
+However, accessing the value of an item as follows is considered to be a Python [anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern):
 
 ```python
 for key in student:
-  print( f"{key} = {student[key]}" )
+    print(f"{key} is {student[key]}")
+    # prints:
+    # name is Maria
+    # favorite_integer is 5
+    # age is 25
 ```
 
-The preferred approach is to use the `items()` method to obtain a [**dictionary view object**](https://docs.python.org/3/library/stdtypes.html#dictionary-view-objects).
+Modifying a dictionary using this approach can lead to potential issues, which is why this is not preferred.
 
-`student.items()` returns a wrapped set of (key, value) tuples:
+The preferred approach is to use the `items()` method to obtain a [dictionary view object](https://docs.python.org/3/library/stdtypes.html#dictionary-view-objects).
 
-```python
-student.items()
-> dict_items([('name', 'Tina'), ('course', 'SEI')])
-```
-
-Then use a `for in` loop to iterate over the view object:
+Use it in a `for in` loop to iterate over the view object:
 
 ```python
 for key, val in student.items():
-  print( f"{key} = {val}" )
+    print(f"{key} is {val}")
+    # prints:
+    # name is Maria
+    # favorite_integer is 5
+    # age is 25
 ```
 
-The `for` statement “unpacks” the tuples by assigning its values to multiple variables like with `key, val` above.
+The `for` statement assigns values to multiple variables like with `key, val` above through a mechanism called tuples, discussed later.
 
-
-## 🧠 You Do (10 minutes) 
+## 🎓 You Do
 
 1. Define a Python dictionary named `where_my_things_are` containing a few items where:
-    - the `keys` are things you have, and
-    - the `values` are the locations you keep those things.
-2. Write a `for` loop that iterates over the items in the dictionary and prints each one as
-    
-    ***My [thing] is kept [location]***
+    - the `keys` are things you have
+    - the `values` are the locations where you keep those things
+2. Write a `for` loop that iterates over the items in the dictionary and prints each one as:
 
-### Dictionary review questions ❓
-
-1. What are dictionaries similar to in JS?
-2. Why might the following code not work?
-  ```python
-  menu = {
-    hamburger: 4.99,
-    french_fries: 1.99,
-    taco: 2.99
-  }
-  ```
-3. What operator can we use to remove an item from a dictionary?
-4. Assuming this dictionary:
-  ```python
-  fruit = {
-  'apples': 'red',
-  'bananas': 'yellow',
-  'oranges': 'orange'
-  }
-  ```
-Identify the problem with this statement:
-  ```python
-  color_of_bananas = fruit.bananas
-  ```
+   ***My [thing] is kept [location]***
