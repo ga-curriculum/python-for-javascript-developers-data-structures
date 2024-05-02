@@ -1,1 +1,1 @@
-# ![Python Data Structures](../assets/tktk-hero.png)
+# ![Python for JavaScript Developers - Python Data Structures](../assets/hero.png)

@@ -1,4 +1,4 @@
-# ![Python Data Structures - Setup](./assets/hero.png)
+# ![Python for JavaScript Developers - Python Data Structures - Setup](./assets/hero.png)
 
 ## Setup
 

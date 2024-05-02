@@ -1,4 +1,4 @@
-# ![Python Data Structures - Sets](./assets/hero.png)
+# ![Python for JavaScript Developers - Python Data Structures - Sets](./assets/hero.png)
 
 **Learning objective:** By the end of this lesson, learners will be able to understand the concept of sets in Python, differentiate them from other data structures, and demonstrate how to create and manipulate sets.
 
