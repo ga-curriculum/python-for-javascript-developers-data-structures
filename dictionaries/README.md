@@ -12,14 +12,7 @@ Dictionaries have a class (type) of `dict`.
 
 As with objects in JavaScript, a dictionary literal is created using curly braces:
 
-```python
-student = {
-    'name': 'Maria',
-    'favorite_integer': 5,
-}
-```
-
-tktk Hunter, could you create a syntax asset here to replace the above, similar to <https://git.generalassemb.ly/modular-curriculum-all-courses/intro-to-javascript-objects/blob/main/concepts/README.md>
+![Dictionary syntax](./assets/dictionary.png)
 
 1. A key
 2. A value
