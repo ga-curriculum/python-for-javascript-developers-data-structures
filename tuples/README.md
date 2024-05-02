@@ -14,11 +14,7 @@ Tuples are commonly classified based on the number of items they contain. For ex
 
 Tuples can be defined in a few different ways. Most basically, they are defined like this:
 
-```python
-colors = ('red', 'green', 'blue')
-```
-
-tktk Hunter, could you create a syntax asset here to replace the above, similar to <https://pages.git.generalassemb.ly/modular-curriculum-all-courses/intro-to-javascript-arrays/fundamentals/>
+![Tuple syntax](./assets/tuple.png)
 
 1. The name of the tuple. This should be plural because it holds a collection of elements.
 2. Opening and closing parenthesis indicate a tuple. These are actually optional (except when creating an empty tuple). However, using parenthesis is popular convention.
