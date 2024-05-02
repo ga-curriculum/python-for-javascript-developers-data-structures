@@ -4,7 +4,7 @@
 
 ## What are tuples?
 
-***Tuples*** in Python are very similar to Python ***lists***. They can be pronounced as either tuh-pull or two-pull. Someone will be mad at you no matter how you pronounce it, so pick one and ignore the haters. A tuple can hold zero or more ***items***.
+***Tuples*** in Python are very similar to Python ***lists***. They can be pronounced as either tuh-pull or two-pull. No matter how you pronounce it, someone will be mad at you, so pick one and ignore the haters. A tuple can hold zero or more ***items***.
 
 Tuples can contain any data type and have a class (type) of `tuple`.
 
@@ -21,7 +21,7 @@ colors = ('red', 'green', 'blue')
 tktk Hunter, could you create a syntax asset here to replace the above, similar to <https://pages.git.generalassemb.ly/modular-curriculum-all-courses/intro-to-javascript-arrays/fundamentals/>
 
 1. The name of the tuple. This should be plural because it holds a collection of elements.
-2. Opening and closing parenthesis indicate a tuple. These are actually optional (except when creating an empty tuple). However, the use of parenthesis is popular convention.
+2. Opening and closing parenthesis indicate a tuple. These are actually optional (except when creating an empty tuple). However, using parenthesis is popular convention.
 3. The tuple's items are placed inside the parenthesis, separated by a comma. When initializing a tuple, you don't have to include elements; use a set of empty parenthesis - `()`.
 
 If you need to create a 1-tuple (a tuple with one item), note that a comma is necessary:
