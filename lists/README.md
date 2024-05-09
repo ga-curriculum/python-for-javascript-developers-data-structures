@@ -12,11 +12,7 @@ Lists can contain any data type - strings, integers, dictionaries, nested lists,
 
 Like arrays in JavaScript, a list can be created with a set of square brackets:
 
-```python
-colors = ['red', 'green', 'blue']
-```
-
-tktk Hunter, could you create a syntax asset here to replace the above , similar to <https://pages.git.generalassemb.ly/modular-curriculum-all-courses/intro-to-javascript-arrays/fundamentals/>
+![List syntax](./assets/list.png)
 
 1. The name of the list. This should be plural because it holds a collection of elements.
 2. Opening and closing square brackets indicate a list.
