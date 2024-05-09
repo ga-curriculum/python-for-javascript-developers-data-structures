@@ -2,7 +2,7 @@
 
 **Learning objective:** By the end of this lesson, students will be able to create and work with lists using list comprehensions.
 
-## What are list comperehensions?
+## What are list comperhensions?
 
 ***List comprehensions*** are a powerful feature in Python.
 
