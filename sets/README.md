@@ -62,4 +62,4 @@ print(chips_set)
 
 ### Mathematical operations
 
-Sets can help performing more complex mathematical operations, such as discovering overlap between two collections of data - check out [this tutorial](https://realpython.com/python-sets/) from Real Python for more
+Sets can help performing more complex mathematical operations, such as discovering overlap between two collections of data - check out [this tutorial](https://realpython.com/python-sets/) from Real Python for more.
