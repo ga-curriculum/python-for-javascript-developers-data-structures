@@ -63,9 +63,9 @@ even_squares = []
 
 # we want 'n * n' for each 'n' in nums  if 'n * n' is even
 for n in nums:
-  square = n * n 
-  if square % 2 == 0:
-    even_squares.append(square)
+    square = n * n 
+    if square % 2 == 0:
+        even_squares.append(square)
 
 print(even_squares)
 # prints: [4, 16, 36, 64, 100]
@@ -76,9 +76,9 @@ Again, list comprehensions reduce the above from:
 ```python
 even_squares = []
 for n in nums:
-  square = n * n 
-  if square % 2 == 0:
-    even_squares.append(square)
+    square = n * n 
+    if square % 2 == 0:
+        even_squares.append(square)
 ```
 
 To this one-liner:
