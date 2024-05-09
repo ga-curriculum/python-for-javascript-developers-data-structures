@@ -40,7 +40,7 @@ print(colors[-1])
 # prints: blue
 ```
 
-This means you don't need to get the length of a list (for example, with `len(colors)`) to find the end of an array. There's no need to write code like `colors[len(colors) - 1]` - yay!
+This means you don't need to get the length of a list (for example, with `len(colors)`) to find the end of a list. There's no need to write code like `colors[len(colors) - 1]` - yay!
 
 ## Mutation
 
