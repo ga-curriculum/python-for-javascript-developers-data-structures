@@ -76,10 +76,10 @@ Another way to avoid the `KeyError` is to use the `in` operator to check if the 
 
 ```python
 if 'course' in student:
-  print(f"{student['name']} is enrolled in {student['course']}")
+    print(f"{student['name']} is enrolled in {student['course']}")
 else:
-  print(f"{student['name']} is not enrolled in a course")
-  # prints: Maria is not enrolled in a course
+    print(f"{student['name']} is not enrolled in a course")
+    # prints: Maria is not enrolled in a course
 ```
 
 ## Mutation
