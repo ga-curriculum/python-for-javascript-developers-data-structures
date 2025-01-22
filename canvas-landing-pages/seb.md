@@ -1,4 +1,7 @@
-# ![Python for JavaScript Developers - Python Data Structures](../assets/hero.png)
+<h1>
+  <span class="prefix">Python for JavaScript Developers</span>
+  <span class="headline">Data Structures</span>
+</h1>
 
 ## About
 

@@ -1,4 +1,7 @@
-# ![Python for JavaScript Developers - Python Data Structures - References](./assets/hero.png)
+<h1>
+  <span class="headline">Data Structures</span>
+  <span class="subhead">References</span>
+</h1>
 
 ## Lesson references
 

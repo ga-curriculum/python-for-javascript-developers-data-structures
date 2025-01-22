@@ -1,4 +1,7 @@
-# ![Python for JavaScript Developers - Python Data Structures - Lists](./assets/hero.png)
+<h1>
+  <span class="headline">Data Structures</span>
+  <span class="subhead">Lists</span>
+</h1>
 
 **Learning objective:** By the end of this lesson, students will be able to create and manipulate lists in Python.
 

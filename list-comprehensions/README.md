@@ -1,4 +1,7 @@
-# ![Python for JavaScript Developers - Python Data Structures - List Comprehensions](./assets/hero.png)
+<h1>
+  <span class="headline">Data Structures</span>
+  <span class="subhead">List Comprehensions</span>
+</h1>
 
 **Learning objective:** By the end of this lesson, students will be able to create and work with lists using list comprehensions.
 
